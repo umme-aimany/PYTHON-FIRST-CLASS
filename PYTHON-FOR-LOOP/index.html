@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Counter App Code</title>
+</head>
+<body>
+    <h1>Python Counter App Code</h1>
+
+    <pre>
+        <code>
+            # Counter App
+
+            def counter_app():
+                count = 0
+
+                while True:
+                    print(f"Current Count: {count}")
+                    print("Options:")
+                    print("1. Increment")
+                    print("2. Decrement")
+                    print("3. Reset")
+                    print("4. Exit")
+
+                    choice = input("Enter your choice (1-4): ")
+
+                    if choice == '1':
+                        count += 1
+                    elif choice == '2':
+                        count -= 1
+                    elif choice == '3':
+                        count = 0
+                    elif choice == '4':
+                        print("Exiting Counter App. Goodbye!")
+                        break
+                    else:
+                        print("Invalid choice. Please enter a number between 1 and 4.")
+
+            if __name__ == "__main__":
+                counter_app()
+        </code>
+    </pre>
+</body>
+</html>
